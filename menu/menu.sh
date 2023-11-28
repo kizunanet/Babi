@@ -285,10 +285,12 @@ echo -e "        ${BICyan} ╰════════════════�
 echo -e "        ${BICyan}╭══════════════════════════════════════════════════════════╮${NC}"
 echo -e "        ${BICyan}│$NC Version       : $(cat /opt/.ver) Last Update ${NC}"
 echo -e "        ${BICyan}│$NC ${GREEN}User          :\033[1;36m $Name \e[0m"
-echo -e "        ${BICyan}│$$NC License      : $Exp  Days $NC"
+echo -e "        ${BICyan}│$NC License      : $Exp $exp2 Days $NC"
 echo -e "        ${BICyan}╰══════════════════════════════════════════════════════════╯${NC}"
 echo -e " "
-read -p " Select menu : " opt
+echo -e "        ${BICyan}°°°°°°°°°°°°$NC"
+read -p "                  PILIH MENU : " opt
+echo -e "        ${BICyan}°°°°°°°°°°°°$NC"
 echo -e ""
 case $opt in
 1) clear ; menu-ssh ;;
