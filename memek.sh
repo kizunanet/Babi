@@ -161,7 +161,7 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
         echo "$nsdomen" > /etc/xray/nsdomain
         echo "$nsdomen" > /root/nsdomain
 fi
-dom=$(cat /root/domain)
+dom=$(cat /root/scdomain)
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 userdel jame > /dev/null 2>&1
@@ -173,7 +173,7 @@ CHATID="-1002030911878"
 KEY="6414883775:AAG-XwXGSYqHpCoDMJbCZxLc3n-GYK0XN-o"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Installasi script v6 By Raden Rizki Kontol 
+TEXT="Installasi script v6 By Raden Rizki
 ============================
 <code>Domain     :</code> <code>$dom</code>
 <code>IP Vps     :</code> <code>$IPVPS</code>
