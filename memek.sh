@@ -164,7 +164,7 @@ fi
 dom=$(cat /root/domain)
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
-IPVPS=$(cat /var/lib/SIJA/ipvps.conf)
+IPVPS=$(cat /etc/myipvps)
 userdel jame > /dev/null 2>&1
 mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
